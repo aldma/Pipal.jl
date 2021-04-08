@@ -1,0 +1,96 @@
+From: "Frank E. Curtis" <frank.e.curtis@lehigh.edu>
+To: "de Marchi, Alberto" <alberto.demarchi@unibw.de>
+Subject: Re: PIPAL code
+Date: Wed, 7 Apr 2021 21:40:19 +0200
+
+Yes, that would be fine. Thanks!
+
+Frank E. Curtis, Ph.D.
+Associate Professor
+Director of Graduate Studies
+Department of Industrial and Systems Engineering
+Lehigh University
+https://coral.ise.lehigh.edu/frankecurtis/
+[he/him/his]
+
+
+
+
+On Wed, Apr 7, 2021 at 9:32 AM Alberto De Marchi <alberto.demarchi@unibw.de> wrote:
+
+Dear Prof. Curtis,
+
+thanks for your kind answer.
+
+I'd tentatively put the MIT or MPL 2.0 license on my Julia translation but I want to be sure we agree on that.
+
+Would you be fine with that?
+
+Best regards,
+
+Alberto
+
+
+
+
+From: "Frank E. Curtis" <frank.e.curtis@lehigh.edu>
+To: "de Marchi, Alberto" <alberto.demarchi@unibw.de>
+Subject: Re: PIPAL code
+Date: Wed, 31 Mar 2021 21:45:04 +0200
+
+Hi Alberto,
+
+This is absolutely fine with me.  I hope people find it useful!
+
+And of course I'd be interested to hear about any success stories or other feedback that you hear about the algorithm.
+
+Let's hope all goes well and the community will indeed get to meet in person at ICCOPT 2022 :-)
+
+Best,
+
+Frank E. Curtis, Ph.D.
+Associate Professor
+Director of Graduate Studies
+Department of Industrial and Systems Engineering
+Lehigh University
+https://coral.ise.lehigh.edu/frankecurtis/
+[he/him/his]
+
+
+
+
+On Wed, Mar 31, 2021 at 1:14 PM Alberto De Marchi <alberto.demarchi@unibw.de> wrote:
+
+Dear Prof. Frank E. Curtis,
+
+I am working with your software for PIPAL and I am writing what is
+essentially a translation in the Julia language of your Matlab code,
+based on PIPAL_1.2.zip from your website.
+
+I’d like to distribute it, say on GitHub, so users can install and use
+it easily. In particular, I am working with the tools provided by the
+"JuliaSmoothOptimizers" ecosystem:
+
+https://github.com/JuliaSmoothOptimizers
+
+Since I didn't see any license with your code, I'd like your consent to
+distribute the Julia version.
+
+Hope all is well in Bethlehem. Looking forward to meeting you at ICCOPT
+2022!
+
+Best regards,
+
+Alberto
+
+
+--
+Alberto De Marchi
+
+Department of Aerospace Engineering
+Universität der Bundeswehr München
+Werner-Heisenberg-Weg 39
+D-85577 Neubiberg/Munich, Germany
+
+e-mail: alberto.demarchi@unibw.de
+website: https://aldma.github.io/
