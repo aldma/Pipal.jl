@@ -4,7 +4,7 @@ Pipal.jl provides a solver for nonlinear optimization problems of the form
 ```
 	minimize    f(x)
 	subject to  cL ≤ c(x) ≤ cU,
-			    xL ≤   x  ≤ xU,
+	            xL ≤   x  ≤ xU,
 ```
 where `f` and `c` are assumed to be continuously differentiable in `Rⁿ`. Pipal.jl implements PIPAL, a penalty-interior-point algorithm for nonlinear opimization of potentially infeasible problems.
 
