@@ -36,7 +36,7 @@ The following keyword parameters can be passed:
 - `tol :: Real` : Tolerance used in assessing primal and dual feasibility (default: 1e-6)
 - `max_iter :: Int` : Maximum number of iterations (default: 3000)
 """
-function pipal(nlp::AbstractNLPModel; kwargs...)
+function pipal(nlp::AbstractNLPModel; verbose = true, kwargs...)
     # set up
     p = Parameters(;kwargs...)
     i = Input(p, nlp)
@@ -45,17 +45,23 @@ function pipal(nlp::AbstractNLPModel; kwargs...)
     d = Direction(i)
     a = Acceptance()
     #
-    printBreak(p, c)
+    if verbose
+        printBreak(p, c)
+    end
     # iteration loop
     while checkTermination(z, p, i, c) == 0
-        printIterate(c, z)
+        if verbose
+            printIterate(c, z)
+        end
         evalStep(d, p, i, c, z, a)
         #printDirection()
         lineSearch(a, p, i, c, z, d)
         #printAcceptance()
         updateIterate(z, p, i, c, d, a)
         incrementIterationCount(c)
-        printBreak(p, c)
+        if verbose
+            printBreak(p, c)
+        end
     end
     # output
     return getOutput(z, p, i, c)
@@ -81,8 +87,8 @@ function getOutput(z::PIPAL_iterate, p::PIPAL_parameters, i::PIPAL_input, c::PIP
     end
     # output
     return GenericExecutionStats(
-        status,
         i.nlp,
+        status = status,
         solution = evalXOriginal(z, i),
         objective = z.fu,
         dual_feas = z.kkt[2],
